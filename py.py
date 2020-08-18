@@ -20,10 +20,10 @@ async def on_message(message):
     if message.content[8:16] == "Cheating":
       if message.content[17:]:
         await client.send_message(message.channel, "Reported by: `" + message.author + "`\nA reported person: `" + message.content[18:] + "`\nReason: `Cheating`")
-    else if message.content[8:16] == "Boosting":
+    if message.content[8:16] == "Boosting":
       if message.content[17:]:
         await client.send_message(message.channel, "Reported by: `" + message.author + "`\nA reported person: `" + message.content[18:] + "`\nReason: `Boosting`")
-    else if message.content[8:16] == "Teammate":
+    if message.content[8:16] == "Teammate":
       if message.content[17:]:
         await client.send_message(message.channel, "Reported by: `" + message.author + "`\nA reported person: `" + message.content[18:] + "`\nReason: `Teammate`")
   if message.content == "!reasons":
