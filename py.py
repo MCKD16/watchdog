@@ -22,7 +22,7 @@ async def on_message(message):
         embed = discordEmbed(
           title = 'REPORT SYSTEM',
           description = 'Reported by: ' + message.author + "\nA reported person: " + message.content[18:] + "\nReason: Cheating",
-          colour = discord.Colour.red()
+          colour = discord.Colour.blue()
         )
         
         embed.set_footer(text='')
@@ -32,7 +32,7 @@ async def on_message(message):
         embed = discordEmbed(
           title = 'REPORT SYSTEM',
           description = 'Reported by: ' + message.author + "\nA reported person: " + message.content[18:] + "\nReason: Boosting",
-          colour = discord.Colour.red()
+          colour = discord.Colour.blue()
         )
         
         embed.set_footer(text='')
@@ -42,7 +42,7 @@ async def on_message(message):
         embed = discordEmbed(
           title = 'REPORT SYSTEM',
           description = 'Reported by: ' + message.author + "\nA reported person: " + message.content[18:] + "\nReason: Teammate",
-          colour = discord.Colour.red()
+          colour = discord.Colour.blue()
         )
         
         embed.set_footer(text='')
